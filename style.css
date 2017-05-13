@@ -1,0 +1,83 @@
+/*
+Theme Name: Twenty Fifteen Michael Nordmeyer
+Theme URI: https://michaelnordmeyer.com/
+Author: Michael Nordmeyer
+Author URI: https://michaelnordmeyer.com/
+Description: Child theme for the Twenty Fifteen theme. Our 2015 default theme is clean, blog-focused, and designed for clarity. Twenty Fifteen's simple, straightforward typography is readable on a wide variety of screen sizes, and suitable for multiple languages. We designed it using a mobile-first approach, meaning your content takes center-stage, regardless of whether your visitors arrive by smartphone, tablet, laptop, or desktop computer.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, blue, gray, pink, purple, white, yellow, dark, light, two-columns, left-sidebar, fixed-layout, responsive-layout, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
+Text Domain: twentyfifteen
+Template: twentyfifteen
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+@import url("../twentyfifteen/style.css");
+
+hr {
+	width: 50%;
+}
+
+/* center copyright */
+.site-info { text-align: center; }
+
+/* Hide byline in entry footer */
+footer.entry-footer .byline { display: none; }
+
+/* Hide titles for some post formats */
+.format-quote .entry-header, .format-status .entry-header {
+	display: none;
+}
+
+/* Related Posts */
+ul.related_post {
+	list-style-type: none;
+}
+
+/*
+.rt-reading-time::before { content: '\f469'; }
+*/
+.rt-reading-time {
+	font-size: small;
+	font-style: italic;
+	margin-bottom: 2em;
+}
+
+/* Social icons */
+ul#socialize {
+	margin-bottom: 0;
+}
+ul#socialize li {
+	display: inline;
+}
+ul#socialize li a {
+	margin: 0 22px 24px 0;
+	font-size: 24px;
+}
+
+/* Archives by zenhabits.net */
+table.zh-archives, .zh-archives th, .zh-archives td {
+	border: none;
+}
+.zh-archives th, .zh-archives td {
+	padding: 4px;
+	vertical-align: top;
+}
+.zh-archives th {
+	text-align: right;
+	-ms-hyphens: none;
+	-webkit-hyphens: none;
+	hyphens: none;
+}
+.zh-archives th.year {
+	font-size: 141%;
+	font-weight: bolder;
+	padding: 6px 0;
+	width: 115px;
+}
+.zh-archives th.month {
+	padding: 6px 0;
+}
